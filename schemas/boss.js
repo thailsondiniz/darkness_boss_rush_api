@@ -1,4 +1,3 @@
-const { text } = require("express");
 const mongoose = require("mongoose");
 
 const bossSchema = new mongoose.Schema({
@@ -19,6 +18,7 @@ const bossSchema = new mongoose.Schema({
     type: [
       {
         userId: String,
+        name: String,
         damage: Number,
       },
     ],
